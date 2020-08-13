@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\backend">
+      <UniqueIdentifier>{cbc5c9b7-8289-484c-b7e4-f76b25ff4059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\backend">
+      <UniqueIdentifier>{71db25df-e97f-405c-b1c7-c90192b694a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app">
+      <UniqueIdentifier>{d908e769-0f0f-4eee-9497-0971361abc84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\frontend">
+      <UniqueIdentifier>{7b18be21-1e09-4b05-a517-6c796c84a050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\frontend">
+      <UniqueIdentifier>{b7b10af5-5f38-4138-ba83-04924e80ffa7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project\backend\backend.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\edge.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\edge_imu.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\edge_prior.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\edge_reprojection.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\eigen_types.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\imu_integration.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\loss_function.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\problem.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\vertex.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\vertex_inverse_depth.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\vertex_motion.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\vertex_point_xyz.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\backend\vertex_pose.h">
+      <Filter>头文件\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\frontend\camera.h">
+      <Filter>头文件\frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\frontend\feature.h">
+      <Filter>头文件\frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\frontend\frame.h">
+      <Filter>头文件\frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="project\frontend\map_point.h">
+      <Filter>头文件\frontend</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="project\backend\edge.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\edge_imu.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\edge_prior.cpp">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\edge_reprojection.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\imu_integration.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\loss_function.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\problem.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\vertex.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\backend\vertex_pose.cc">
+      <Filter>源文件\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="project\app\CurveFitting.cpp">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="project\app\TestMonoBA.cpp">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="project\frontend\frame.cc">
+      <Filter>源文件\frontend</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
