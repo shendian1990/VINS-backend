@@ -1,5 +1,4 @@
-#ifndef MYSLAM_BACKEND_POSEVERTEX_H
-#define MYSLAM_BACKEND_POSEVERTEX_H
+﻿#pragma once
 
 #include <memory>
 #include "backend/vertex.h"
@@ -16,7 +15,7 @@ namespace backend {
  */
 class VertexPose : public Vertex {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     VertexPose() : Vertex(7, 6) {}
 
@@ -45,5 +44,3 @@ public:
 
 }
 }
-
-#endif

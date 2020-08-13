@@ -1,5 +1,5 @@
-#ifndef MYSLAM_BACKEND_MOTIONVERTEX_H
-#define MYSLAM_BACKEND_MOTIONVERTEX_H
+#pragma once
+
 
 #include <memory>
 #include "backend/vertex.h"
@@ -14,7 +14,7 @@ namespace backend {
  */
 class VertexMotion : public Vertex {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     VertexMotion() : Vertex(9) {}
 
@@ -26,5 +26,3 @@ public:
 
 }
 }
-
-#endif

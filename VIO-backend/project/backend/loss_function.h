@@ -1,9 +1,7 @@
 //
 // Created by gaoxiang19 on 11/10/18.
 //
-
-#ifndef MYSLAM_LOSS_FUNCTION_H
-#define MYSLAM_LOSS_FUNCTION_H
+#pragma once
 
 #include "backend/eigen_types.h"
 
@@ -21,7 +19,7 @@ namespace backend {
  */
 class LossFunction {
 public:
-    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    ////EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     virtual ~LossFunction() {}
 
@@ -60,5 +58,3 @@ private:
 
 }
 }
-
-#endif //MYSLAM_LOSS_FUNCTION_H

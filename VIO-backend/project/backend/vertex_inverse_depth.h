@@ -1,5 +1,4 @@
-#ifndef MYSLAM_BACKEND_INVERSE_DEPTH_H
-#define MYSLAM_BACKEND_INVERSE_DEPTH_H
+#pragma once
 
 #include "backend/vertex.h"
 
@@ -11,7 +10,7 @@ namespace backend {
  */
 class VertexInverseDepth : public Vertex {
 public:
-    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    ////EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     VertexInverseDepth() : Vertex(1) {}
 
@@ -20,5 +19,3 @@ public:
 
 }
 }
-
-#endif

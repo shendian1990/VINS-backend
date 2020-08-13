@@ -8,7 +8,7 @@ namespace backend {
 
 class IMUIntegration {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     /**
      * constructor, with initial bias a and bias g

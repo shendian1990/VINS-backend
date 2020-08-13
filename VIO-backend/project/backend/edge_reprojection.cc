@@ -5,8 +5,6 @@
 #include "backend/edge_reprojection.h"
 #include "backend/eigen_types.h"
 
-#include <iostream>
-
 namespace myslam {
 namespace backend {
 

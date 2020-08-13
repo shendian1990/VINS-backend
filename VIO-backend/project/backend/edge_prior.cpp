@@ -7,8 +7,6 @@
 #include "edge_prior.h"
 #include "backend/vertex_pose.h"
 
-#include <iostream>
-
 #define USE_SO3_JACOBIAN 1
 
 namespace myslam {

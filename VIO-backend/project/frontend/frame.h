@@ -2,8 +2,7 @@
 // Created by gaoxiang19 on 19-1-7.
 //
 
-#ifndef SLAM_COURSE_FRAME_H
-#define SLAM_COURSE_FRAME_H
+#pragma once
 
 #include <opencv2/opencv.hpp>
 #include <memory>
@@ -17,7 +16,7 @@ namespace myslam {
 namespace frontend {
 
 struct Frame {
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
 private:
     double timestamp = 0.0;
@@ -40,5 +39,3 @@ private:
 
 }
 }
-
-#endif //SLAM_COURSE_FRAME_H

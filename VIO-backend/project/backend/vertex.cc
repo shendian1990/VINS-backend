@@ -1,5 +1,4 @@
 #include "backend/vertex.h"
-#include <iostream>
 
 namespace myslam {
 namespace backend {

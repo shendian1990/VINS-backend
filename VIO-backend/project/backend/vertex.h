@@ -1,5 +1,4 @@
-#ifndef MYSLAM_BACKEND_VERTEX_H
-#define MYSLAM_BACKEND_VERTEX_H
+#pragma once
 
 #include <backend/eigen_types.h>
 
@@ -12,7 +11,7 @@ namespace backend {
  */
 class Vertex {
 public:
-    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    ////EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     /**
      * 构造函数
@@ -75,5 +74,3 @@ protected:
 
 }
 }
-
-#endif

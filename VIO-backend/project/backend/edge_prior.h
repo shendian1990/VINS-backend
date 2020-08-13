@@ -2,8 +2,8 @@
 // Created by heyijia on 19-1-30.
 //
 
-#ifndef SLAM_COURSE_EDGE_PRIOR_H
-#define SLAM_COURSE_EDGE_PRIOR_H
+#pragma once
+
 
 #include <memory>
 #include <string>
@@ -22,7 +22,7 @@ namespace backend {
 */
 class EdgeSE3Prior : public Edge {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     EdgeSE3Prior(const Vec3 &p, const Qd &q) :
             Edge(6, 1, std::vector<std::string>{"VertexPose"}),
@@ -46,5 +46,3 @@ private:
 }
 }
 
-
-#endif //SLAM_COURSE_EDGE_PRIOR_H

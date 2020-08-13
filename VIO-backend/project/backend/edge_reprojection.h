@@ -1,5 +1,4 @@
-#ifndef MYSLAM_BACKEND_VISUALEDGE_H
-#define MYSLAM_BACKEND_VISUALEDGE_H
+#pragma once
 
 #include <memory>
 #include <string>
@@ -20,7 +19,7 @@ namespace backend {
  */
 class EdgeReprojection : public Edge {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     EdgeReprojection(const Vec3 &pts_i, const Vec3 &pts_j)
         : Edge(2, 3, std::vector<std::string>{"VertexInverseDepth", "VertexPose", "VertexPose"}) {
@@ -55,7 +54,7 @@ private:
 */
 class EdgeReprojectionXYZ : public Edge {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     EdgeReprojectionXYZ(const Vec3 &pts_i)
         : Edge(2, 2, std::vector<std::string>{"VertexXYZ", "VertexPose"}) {
@@ -87,7 +86,7 @@ private:
  */
 class EdgeReprojectionPoseOnly : public Edge {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     EdgeReprojectionPoseOnly(const Vec3 &landmark_world, const Mat33 &K) :
         Edge(2, 1, std::vector<std::string>{"VertexPose"}),
@@ -110,4 +109,3 @@ private:
 }
 }
 
-#endif

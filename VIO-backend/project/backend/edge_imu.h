@@ -1,5 +1,5 @@
-#ifndef MYSLAM_BACKEND_IMUEDGE_H
-#define MYSLAM_BACKEND_IMUEDGE_H
+#pragma once
+
 
 #include <memory>
 #include <string>
@@ -17,7 +17,7 @@ namespace backend {
  */
 class EdgeImu : public Edge {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     explicit EdgeImu(std::shared_ptr<IMUIntegration> pre_integration)
         : pre_integration_(pre_integration),
@@ -59,4 +59,3 @@ private:
 
 }
 }
-#endif

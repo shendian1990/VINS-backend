@@ -1,5 +1,5 @@
-#ifndef MYSLAM_BACKEND_EDGE_H
-#define MYSLAM_BACKEND_EDGE_H
+﻿#pragma once
+
 
 #include <memory>
 #include <string>
@@ -16,7 +16,7 @@ class Vertex;
  */
 class Edge {
 public:
-    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    ////EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     /**
      * 构造函数，会自动化配雅可比的空间
@@ -124,5 +124,3 @@ protected:
 
 }
 }
-
-#endif

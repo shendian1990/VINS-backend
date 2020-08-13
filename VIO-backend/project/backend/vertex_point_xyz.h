@@ -1,5 +1,4 @@
-#ifndef MYSLAM_BACKEND_POINTVERTEX_H
-#define MYSLAM_BACKEND_POINTVERTEX_H
+#pragma once
 
 #include "backend/vertex.h"
 
@@ -11,7 +10,7 @@ namespace backend {
  */
 class VertexPointXYZ : public Vertex {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     VertexPointXYZ() : Vertex(3) {}
 
@@ -21,4 +20,3 @@ public:
 }
 }
 
-#endif

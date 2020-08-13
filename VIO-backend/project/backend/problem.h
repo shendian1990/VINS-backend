@@ -1,5 +1,5 @@
-#ifndef MYSLAM_BACKEND_PROBLEM_H
-#define MYSLAM_BACKEND_PROBLEM_H
+#pragma once
+
 
 #include <unordered_map>
 #include <map>
@@ -35,7 +35,7 @@ public:
     typedef std::unordered_map<unsigned long, std::shared_ptr<Edge>> HashEdge;
     typedef std::unordered_multimap<unsigned long, std::shared_ptr<Edge>> HashVertexIdToEdge;
 
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    ////EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     Problem(ProblemType problemType);
 
@@ -191,5 +191,3 @@ private:
 
 }
 }
-
-#endif

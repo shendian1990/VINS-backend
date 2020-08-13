@@ -2,8 +2,8 @@
 // Created by gaoxiang19 on 19-1-7.
 //
 
-#ifndef SLAM_COURSE_CAMERA_H
-#define SLAM_COURSE_CAMERA_H
+#pragma once
+
 
 #include "backend/eigen_types.h"
 #include <sophus/se3.hpp>
@@ -12,7 +12,7 @@ namespace myslam {
 namespace frontend {
 
 struct PinholeCamera {
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     PinholeCamera(
         const float &_fx, const float &_fy,
@@ -47,5 +47,3 @@ struct PinholeCamera {
 
 }
 }
-
-#endif //SLAM_COURSE_CAMERA_H

@@ -82,6 +82,7 @@ int main() {
 
         problem.AddVertex(vertexCam);
         vertexCams_vec.push_back(vertexCam);
+        vertexCams_vec.push_back(vertexCam);
     }
 
     // 所有 Point 及 edge

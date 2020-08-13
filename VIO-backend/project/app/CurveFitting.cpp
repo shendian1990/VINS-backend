@@ -1,6 +1,5 @@
-#include <iostream>
+﻿#include <iostream>
 #include <random>
-#include "backend/vertex_inverse_depth.h"
 #include "backend/vertex_pose.h"
 #include "backend/edge_reprojection.h"
 #include "backend/problem.h"
@@ -12,7 +11,7 @@ using namespace std;
 class CurveFittingVertex: public Vertex
 {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
     CurveFittingVertex(): Vertex(3) {}
     virtual std::string TypeInfo() const { return "abc"; }
@@ -22,13 +21,13 @@ public:
 class CurveFittingEdge: public Edge
 {
 public:
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+    //EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     CurveFittingEdge( double x, double y ): Edge(1,1, std::vector<std::string>{"abc"}) {
         x_ = x;
         y_ = y;
     }
     // 计算曲线模型误差
-    virtual void ComputeResidual() override
+    void ComputeResidual() override
     {
         Vec3 abc = verticies_[0]->Parameters();
         residual_(0) = std::exp( abc(0)*x_*x_ + abc(1)*x_ + abc(2) ) - y_;
@@ -80,5 +79,4 @@ int main()
     std::cout << vertex->Parameters() << std::endl;
     return 0;
 }
-
 
